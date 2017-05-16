@@ -27,7 +27,7 @@
 		FA71E91F1ECA24B8000F7FA4 /* ButtonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71E91E1ECA24B8000F7FA4 /* ButtonImage.swift */; };
 		FAA6BDED1ECB9CE7006A1953 /* PembelianController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDEC1ECB9CE7006A1953 /* PembelianController.swift */; };
 		FAA6BDF21ECB9FF5006A1953 /* CustomCellProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDF11ECB9FF5006A1953 /* CustomCellProfile.swift */; };
-		FAADF86A1EC8228C00E74116 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF8681EC8228C00E74116 /* LeftViewController.swift */; };
+		FAA6BDF41ECBA800006A1953 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDF31ECBA800006A1953 /* LeftViewController.swift */; };
 		FAADF86B1EC8228C00E74116 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF8691EC8228C00E74116 /* RightViewController.swift */; };
 		FAADF86D1EC822DD00E74116 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF86C1EC822DD00E74116 /* MainViewController.swift */; };
 		FAADF8711EC823A600E74116 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF86E1EC823A600E74116 /* BaseTableViewCell.swift */; };
@@ -89,7 +89,7 @@
 		FA71E91E1ECA24B8000F7FA4 /* ButtonImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonImage.swift; sourceTree = "<group>"; };
 		FAA6BDEC1ECB9CE7006A1953 /* PembelianController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PembelianController.swift; path = Controller/PembelianController.swift; sourceTree = "<group>"; };
 		FAA6BDF11ECB9FF5006A1953 /* CustomCellProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellProfile.swift; sourceTree = "<group>"; };
-		FAADF8681EC8228C00E74116 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftViewController.swift; path = "../../../../Downloads/SlideMenuControllerSwift-master 2/SlideMenuControllerSwift/LeftViewController.swift"; sourceTree = "<group>"; };
+		FAA6BDF31ECBA800006A1953 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		FAADF8691EC8228C00E74116 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightViewController.swift; path = "../../../../Downloads/SlideMenuControllerSwift-master 2/SlideMenuControllerSwift/RightViewController.swift"; sourceTree = "<group>"; };
 		FAADF86C1EC822DD00E74116 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "../../../../Downloads/SlideMenuControllerSwift-master 2/SlideMenuControllerSwift/MainViewController.swift"; sourceTree = "<group>"; };
 		FAADF86E1EC823A600E74116 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTableViewCell.swift; path = "../../../../Downloads/SlideMenuControllerSwift-master 2/SlideMenuControllerSwift/BaseTableViewCell.swift"; sourceTree = "<group>"; };
@@ -206,7 +206,7 @@
 				FAADF8781EC825D900E74116 /* JavaViewController.swift */,
 				FAADF8791EC825D900E74116 /* SwiftViewController.swift */,
 				FAADF86C1EC822DD00E74116 /* MainViewController.swift */,
-				FAADF8681EC8228C00E74116 /* LeftViewController.swift */,
+				FAA6BDF31ECBA800006A1953 /* LeftViewController.swift */,
 				FAADF8691EC8228C00E74116 /* RightViewController.swift */,
 				FAADF89C1EC82D1C00E74116 /* SplashVC.swift */,
 				FAADF8DA1EC886E800E74116 /* NavButtonBarExampleViewController.swift */,
@@ -429,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAADF8D51EC8861600E74116 /* DataProvider.swift in Sources */,
+				FAA6BDF41ECBA800006A1953 /* LeftViewController.swift in Sources */,
 				FAADF8981EC826DD00E74116 /* UIApplication.swift in Sources */,
 				FAADF87A1EC825D900E74116 /* JavaViewController.swift in Sources */,
 				FAADF8761EC825BE00E74116 /* ImageHeaderView.swift in Sources */,
@@ -447,7 +448,6 @@
 				FAA6BDF21ECB9FF5006A1953 /* CustomCellProfile.swift in Sources */,
 				FAADF8961EC826A400E74116 /* UIViewController.swift in Sources */,
 				FAADF8DB1EC886E800E74116 /* NavButtonBarExampleViewController.swift in Sources */,
-				FAADF86A1EC8228C00E74116 /* LeftViewController.swift in Sources */,
 				FAADF8D61EC8861600E74116 /* PostCell.swift in Sources */,
 				FAA6BDED1ECB9CE7006A1953 /* PembelianController.swift in Sources */,
 				FAADF8941EC826A400E74116 /* UITableViewExtension.swift in Sources */,
