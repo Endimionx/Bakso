@@ -10,7 +10,7 @@ import UIKit
 import SlideMenuControllerSwift
 import CoreData
 import GoogleMaps
-
+import IQKeyboardManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,40 +23,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GMSServices.provideAPIKey("AIzaSyBOfEwCHrAsU2h-6IGVb_SunAPmpUaXa2I")
         
-        // create viewController code...
+        UITabBar.appearance().tintColor = UIColor(hex: "0080c1")
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        IQKeyboardManager.shared().isEnabled = true
         
-        let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-        let leftViewController = storyboard.instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
-        let rightViewController = storyboard.instantiateViewController(withIdentifier: "RightViewController") as! RightViewController
         
-        let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
-        
-        UINavigationBar.appearance().tintColor = UIColor(hex: "0080c1")
-        
-        leftViewController.mainViewController = nvc
-
-        
-//        let slideMenuController = SlideMenuController(mainViewController:nvc, leftMenuViewController: leftViewController, rightMenuViewController: rightViewController)
-//        slideMenuController.automaticallyAdjustsScrollViewInsets = true
-//        slideMenuController.delegate = mainViewController
-//        self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
-//        self.window?.rootViewController = slideMenuController
-//        self.window?.makeKeyAndVisible()
-        
-
-        UITabBar.appearance().tintColor = UIColor(hex: "0080c1") //UIColor.white
+        var img = UIImage()
+        //UINavigationBar.appearance().shadowImage = img
+        //UINavigationBar.appearance().setBackgroundImage(img , for: UIBarMetrics.default)
         UINavigationBar.appearance().backgroundColor = UIColor(hex: "0080c1")
         UINavigationBar.appearance().titleTextAttributes =  [NSForegroundColorAttributeName: UIColor.white]
         UINavigationBar.appearance().barTintColor = UIColor(hex: "0080c1")
         UINavigationBar.appearance().tintColor = UIColor.white
-        //UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -60), for:UIBarMetrics.default)
+        
+ 
 
         
         return true
     }
 
+    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
+        
+        let scale = newWidth / image.size.width
+        let newHeight = 100 //image.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: CGFloat(newHeight)))
+        image.draw(in: CGRect(x: 0, y: 0, width: Int(newWidth), height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
+    }
+
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

@@ -8,11 +8,12 @@
 import UIKit
 
 enum LeftMenu: Int {
-    case main = 0
-    case swift
-    case java
-    case go
-    case nonMenu
+    case pembelian = 0
+    case notifikasi = 1
+    case kritik = 2
+    case tanya = 3
+    case tentang = 4
+    case keluar = 5
 }
 
 protocol LeftMenuProtocol : class {
@@ -33,6 +34,10 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
     var nonMenuViewController: UIViewController!
     var imageHeaderView: ImageHeaderView!
     
+    var pembelianController: UIViewController!
+    var notifController: UIViewController!
+    var kritikController: UIViewController!
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -43,8 +48,21 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
         self.tableView.separatorColor = UIColor(red: 224/255, green: 224/255, blue: 224/255, alpha: 1.0)
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
         let swiftViewController = storyboard.instantiateViewController(withIdentifier: "SwiftViewController") as! SwiftViewController
         self.swiftViewController = UINavigationController(rootViewController: swiftViewController)
+        
+        let pembelianController = storyboard.instantiateViewController(withIdentifier: "PembelianController") as! PembelianController
+        self.pembelianController = UINavigationController(rootViewController: pembelianController)
+        
+        let notifController = storyboard.instantiateViewController(withIdentifier: "NotifController") as! NotifControllerViewController
+        self.notifController = UINavigationController(rootViewController: notifController)
+        
+        let kritikController = storyboard.instantiateViewController(withIdentifier: "KritikController") as! KritikController
+        self.kritikController = UINavigationController(rootViewController: kritikController)
+        
+        
         
         let javaViewController = storyboard.instantiateViewController(withIdentifier: "JavaViewController") as! JavaViewController
         self.javaViewController = UINavigationController(rootViewController: javaViewController)
@@ -87,17 +105,23 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
     
     func changeViewController(_ menu: LeftMenu) {
         switch menu {
-        case .main:
-            self.slideMenuController()?.changeMainViewController(self.mainViewController, close: true)
-        case .swift:
-            self.slideMenuController()?.changeMainViewController(self.swiftViewController, close: true)
-        case .java:
-            self.slideMenuController()?.changeMainViewController(self.javaViewController, close: true)
-        case .go:
-            self.slideMenuController()?.changeMainViewController(self.goViewController, close: true)
-        case .nonMenu:
-            self.slideMenuController()?.changeMainViewController(self.nonMenuViewController, close: true)
+            case .pembelian:
+                self.present(pembelianController, animated:true, completion: nil)
+            case .notifikasi:
+                self.present(notifController, animated:true, completion: nil)
+            case .kritik:
+                self.present(kritikController, animated:true, completion: nil)
+            case .tanya:
+                self.slideMenuController()?.changeMainViewController(self.goViewController, close: true)
+            case .tentang:
+                self.slideMenuController()?.changeMainViewController(self.nonMenuViewController, close: true)
+            case .keluar:
+                self.slideMenuController()?.changeMainViewController(self.nonMenuViewController, close: true)
         }
+        
+        self.closeLeft()
+        self.closeRight()
+        
     }
     
     
@@ -118,6 +142,13 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let menu = LeftMenu(rawValue: indexPath.row) {
+            self.changeViewController(menu)
+        }
+    }
+    
+    
     
 }
 

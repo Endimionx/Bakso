@@ -20,7 +20,7 @@ class MainViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
         
         // set up style before super view did load is executed
-        settings.style.buttonBarBackgroundColor = .clear
+        settings.style.buttonBarBackgroundColor = UIColor(hex: "0080c1")
         settings.style.selectedBarBackgroundColor = UIColor(hex: "c8e8ff")
         settings.style.buttonBarItemsWidth = Int(self.view.frame.width / CGFloat(3))
         

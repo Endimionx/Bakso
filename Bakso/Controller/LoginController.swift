@@ -145,7 +145,7 @@ class LoginController: UIViewController, UIGestureRecognizerDelegate {
         
         let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
         
-        UINavigationBar.appearance().tintColor = UIColor(hex: "0080c1")
+        //UINavigationBar.appearance().tintColor = UIColor(hex: "0080c1")
         
         leftViewController.mainViewController = nvc
         
@@ -156,11 +156,13 @@ class LoginController: UIViewController, UIGestureRecognizerDelegate {
         slideMenuController.changeLeftViewWidth(view.frame.width * 0.8)
         self.present(slideMenuController, animated: true, completion: nil)
         
-        UITabBar.appearance().tintColor = UIColor(hex: "0080c1") //UIColor.white
-        UINavigationBar.appearance().backgroundColor = UIColor(hex: "0080c1")
-        UINavigationBar.appearance().titleTextAttributes =  [NSForegroundColorAttributeName: UIColor.white]
-        UINavigationBar.appearance().barTintColor = UIColor(hex: "0080c1")
-        UINavigationBar.appearance().tintColor = UIColor.white
+        
+        
+//        let img = UIImage()
+//        self.navigationController?.navigationBar.shadowImage = img
+//        self.navigationController?.navigationBar.setBackgroundImage(img, for: UIBarMetrics.default)
+//        self.navigationController?.navigationBar.barTintColor = UIColor(hex: "0080c1")
+//        
         
     }
 

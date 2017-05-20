@@ -25,4 +25,13 @@ extension UIViewController {
         self.slideMenuController()?.removeLeftGestures()
         self.slideMenuController()?.removeRightGestures()
     }
+    
+    func setNavigationBarItemBack() {
+        self.addLeftBarButtonWithImageTextBack(UIImage(named: "ic_arrow")!)
+        self.slideMenuController()?.removeLeftGestures()
+        self.slideMenuController()?.removeRightGestures()
+        self.slideMenuController()?.addLeftGestures()
+        self.slideMenuController()?.addRightGestures()
+    }
+    
 }
