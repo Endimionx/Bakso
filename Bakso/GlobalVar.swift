@@ -11,7 +11,9 @@ import UIKit
 
 
 let mainColor = UIColor(hex: "0080c1")
-
+public var intFCm = 0
+public var intRegister = 0
+public var strServer = "http://bakso.narengga.com/api/"
 
 func drawLineFromPoint(start : CGPoint, toPoint end:CGPoint, ofColor lineColor: UIColor, inView view:UIView) {
     

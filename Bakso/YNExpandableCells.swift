@@ -11,6 +11,8 @@ import UIKit
 
 class YNExpandableCellEx: YNExpandableCell {
     static let ID = "YNExpandableCellEx"
+    static let lblDesc = UILabel()
+    
     
     @IBOutlet var titleLabel: UILabel!
 
@@ -29,6 +31,7 @@ class YNExpandableCellEx: YNExpandableCell {
 
 class YNSliderCell: UITableViewCell {
     static let ID = "YNSliderCell"
+    static var lblDesc = UILabel()
     
     @IBOutlet weak var lbl: UITextView!
     public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
@@ -51,9 +54,14 @@ class YNSliderCell: UITableViewCell {
 
 class YNSegmentCell: UITableViewCell {
     static let ID = "YNSegmentCell"
+    let lblDesc = UILabel()
     
+    @IBOutlet var lblInfo: UILabel!
+   
     public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        
         
     }
     
@@ -64,8 +72,9 @@ class YNSegmentCell: UITableViewCell {
     public override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
-        
-
+     
+    
     }
+    
 
 }

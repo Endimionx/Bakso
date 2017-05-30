@@ -10,6 +10,12 @@ import UIKit
 
 class KritikController: UIViewController {
 
+    var loader: UIActivityIndicatorView!
+    var viewLoading:UIView!
+    var syncLogo: UIImageView!
+    var syncImage: UIImageView!
+    
+    
     var viewTop = UIView()
     var imgApps = UIImageView()
     var txtDesc : UITextView?
@@ -72,11 +78,14 @@ class KritikController: UIViewController {
         btnKirim.setTitleColor(UIColor.white, for: .normal)
         btnKirim.buttonColor = UIColor(hex: "0080c1")
         btnKirim.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-        
+        btnKirim.addTarget(self, action: #selector(startSpinning), for: .touchUpInside)
         
         view.addSubview(viewTop)
         view.addSubview(txtDesc!)
         view.addSubview(btnKirim)
+        
+        
+        initLoading()
         
         // Do any additional setup after loading the view.
     }
@@ -91,5 +100,114 @@ class KritikController: UIViewController {
         
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
+    
+    
+    func initLoading(){
+        
+        viewLoading = UIView()
+        viewLoading.frame = view.bounds
+        viewLoading.backgroundColor = UIColor.groupTableViewBackground
+        
+        loader = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        loader.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        loader.center = view.center
+        
+        viewLoading.addSubview(loader)
+        
+        viewLoading.isHidden = true
+        view.addSubview(viewLoading)
+    }
+    
+    
+    func startSpinning() {
+        viewLoading.isHidden = false
+        loader.startAnimating()
+        
+        viewLoading.isHidden = false
+        
+        postDataFeedback()
+        
+    }
+    
+    
+    func stopSpinning() {
+        viewLoading.isHidden = true
+        loader.stopAnimating()
+    }
+    
+    func postDataFeedback(){
+        
+        
+        let sUrl = "set_feedback"
+        
+        let URL_SAVE_TEAM = strServer + sUrl
+        let requestURL = NSURL(string: URL_SAVE_TEAM)
+        
+        let request = NSMutableURLRequest(url: requestURL! as URL)
+        
+        request.httpMethod = "POST"
+        
+        var strQuery:String = ""
+        strQuery += "customer=" + User.getCustomerId()
+        strQuery += "&description=" + (txtDesc?.text)!
+        
+        
+        let postParameters = strQuery
+        
+        request.httpBody = postParameters.data(using: String.Encoding.utf8)
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest){
+            data, response, error in
+            
+            if error != nil{
+                print("error is \(error)")
+                return;
+            }
+            
+            do {
+                
+                let myJSON = try JSONSerialization.jsonObject(with: data! as Data,  options:JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+                
+                
+                
+                let result = myJSON["status"] as! Int
+                let message = myJSON["message"] as! String
+                
+                if (result == 1){
+                    
+                    DispatchQueue.main.async(execute: { () -> Void in
+                        
+                        let alert =  UIAlertView(title: "Info", message: message , delegate: nil, cancelButtonTitle: "OK")
+                        alert.show()
+                        self.stopSpinning()
+                        self.txtDesc?.text = ""
+                        
+                    })
+                    
+                }else{
+                    
+                    DispatchQueue.main.async(execute: { () -> Void in
+                        
+                        let alert =  UIAlertView(title: "Info", message: message , delegate: nil, cancelButtonTitle: "OK")
+                        alert.show()
+                        
+                        self.stopSpinning()
+                        
+                    })
+                    
+                }
+                
+                
+            } catch {
+                print(error)
+            }
+            
+        }
+        task.resume()
+        
+    }
+    
+
+    
 
 }

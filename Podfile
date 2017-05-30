@@ -14,5 +14,8 @@ target ‘Bakso’ do
   pod 'IQKeyboardManager'
   #pod 'DPDropDownMenu'
   pod 'YNExpandableCell'
+  pod 'JExpandableTableView'
+  pod 'SVProgressHUD', '~> 2.0'
+  
   
 end

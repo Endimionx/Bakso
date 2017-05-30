@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A9BA2226359315811D81EBD7 /* Pods_Bakso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82F063BB68F3730B6A408B7 /* Pods_Bakso.framework */; };
+		FA13A2051ED349FF002D7F79 /* PemesananController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13A2041ED349FF002D7F79 /* PemesananController.swift */; };
+		FA13A2071ED36138002D7F79 /* ChildNotif.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13A2061ED36138002D7F79 /* ChildNotif.swift */; };
+		FA6A9D801ED050FE00BB15D5 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A9D7F1ED050FE00BB15D5 /* ProfileController.swift */; };
+		FA6A9D821ED2FABE00BB15D5 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A9D811ED2FABE00BB15D5 /* EditProfileController.swift */; };
 		FA6EF5AB1EC812810069D1F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF5AA1EC812810069D1F4 /* AppDelegate.swift */; };
 		FA6EF5AD1EC812810069D1F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EF5AC1EC812810069D1F4 /* ViewController.swift */; };
 		FA6EF5B01EC812810069D1F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF5AE1EC812810069D1F4 /* Main.storyboard */; };
@@ -24,16 +28,24 @@
 		FA71E91B1ECA239B000F7FA4 /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71E91A1ECA239B000F7FA4 /* VC.swift */; };
 		FA71E91D1ECA2443000F7FA4 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71E91C1ECA2443000F7FA4 /* Device.swift */; };
 		FA71E91F1ECA24B8000F7FA4 /* ButtonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71E91E1ECA24B8000F7FA4 /* ButtonImage.swift */; };
+		FA7BD5EA1ED5E299009E0917 /* PesanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BD5E91ED5E299009E0917 /* PesanCell.swift */; };
+		FA7BD5F01ED6082C009E0917 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BD5EF1ED6082C009E0917 /* User.swift */; };
+		FA7BD5F21ED60C49009E0917 /* ClassStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BD5F11ED60C49009E0917 /* ClassStruct.swift */; };
+		FA7BD6091ED8817F009E0917 /* FaqController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BD6081ED8817F009E0917 /* FaqController.swift */; };
+		FA7BD60B1ED88640009E0917 /* CellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BD60A1ED88640009E0917 /* CellInfo.swift */; };
+		FA7BD60D1ED88656009E0917 /* SectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BD60C1ED88656009E0917 /* SectionInfo.swift */; };
+		FA7BD60F1ED8868B009E0917 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BD60E1ED8868B009E0917 /* HeaderView.swift */; };
+		FA7BD6111ED886A6009E0917 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7BD6101ED886A6009E0917 /* HeaderView.xib */; };
+		FA7BD6131ED886B6009E0917 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7BD6121ED886B6009E0917 /* ImageCell.xib */; };
+		FA7BD6151ED886CB009E0917 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7BD6141ED886CB009E0917 /* TextCell.xib */; };
+		FA7BD6171ED8BF31009E0917 /* MIBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BD6161ED8BF31009E0917 /* MIBadgeButton.swift */; };
 		FAA6BDED1ECB9CE7006A1953 /* PembelianController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDEC1ECB9CE7006A1953 /* PembelianController.swift */; };
 		FAA6BDF21ECB9FF5006A1953 /* CustomCellProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDF11ECB9FF5006A1953 /* CustomCellProfile.swift */; };
 		FAA6BDF41ECBA800006A1953 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDF31ECBA800006A1953 /* LeftViewController.swift */; };
 		FAA6BDF61ECBAA60006A1953 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDF51ECBAA60006A1953 /* MainViewController.swift */; };
-		FAA6BDF81ECBAAAD006A1953 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDF71ECBAAAD006A1953 /* SwiftViewController.swift */; };
-		FAA6BDFA1ECBAAC7006A1953 /* JavaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDF91ECBAAC7006A1953 /* JavaViewController.swift */; };
 		FAA6BDFC1ECBAAE9006A1953 /* ExSlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDFB1ECBAAE9006A1953 /* ExSlideMenuController.swift */; };
 		FAA6BDFE1ECBAB0B006A1953 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDFD1ECBAB0B006A1953 /* UIViewController.swift */; };
 		FAA6BE001ECBAB24006A1953 /* SubContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BDFF1ECBAB24006A1953 /* SubContentsViewController.swift */; };
-		FAA6BE021ECBAB3B006A1953 /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BE011ECBAB3B006A1953 /* GoViewController.swift */; };
 		FAA6BE041ECBAB57006A1953 /* NonMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BE031ECBAB57006A1953 /* NonMenuController.swift */; };
 		FAA6BE061ECBAB70006A1953 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6BE051ECBAB70006A1953 /* RightViewController.swift */; };
 		FAA6BE081ECBAC24006A1953 /* RatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA6BE071ECBAC24006A1953 /* RatingViewController.xib */; };
@@ -57,12 +69,9 @@
 		FAADF8A31EC8508900E74116 /* UIVerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF8A21EC8508900E74116 /* UIVerticalAlignLabel.swift */; };
 		FAADF8A51EC850C300E74116 /* SlideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF8A41EC850C300E74116 /* SlideCell.swift */; };
 		FAADF8A71EC86E6500E74116 /* GlobalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF8A61EC86E6500E74116 /* GlobalVar.swift */; };
-		FAADF8CC1EC8850500E74116 /* ChildExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF8CB1EC8850500E74116 /* ChildExampleViewController.swift */; };
-		FAADF8CE1EC8855D00E74116 /* TableChildExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF8CD1EC8855D00E74116 /* TableChildExampleViewController.swift */; };
 		FAADF8D51EC8861600E74116 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF8D21EC8861600E74116 /* DataProvider.swift */; };
 		FAADF8D61EC8861600E74116 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF8D31EC8861600E74116 /* PostCell.swift */; };
 		FAADF8D71EC8861600E74116 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAADF8D41EC8861600E74116 /* PostCell.xib */; };
-		FAADF8DB1EC886E800E74116 /* NavButtonBarExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADF8DA1EC886E800E74116 /* NavButtonBarExampleViewController.swift */; };
 		FAED86BD1ECC9DDA0094F030 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED86BC1ECC9DDA0094F030 /* KeyboardLayoutConstraint.swift */; };
 		FAED86BF1ECCB3440094F030 /* PembayaranController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED86BE1ECCB3440094F030 /* PembayaranController.swift */; };
 		FAED86C11ECCB5690094F030 /* ItemBayarTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED86C01ECCB5690094F030 /* ItemBayarTableCell.swift */; };
@@ -77,12 +86,20 @@
 		FAED86E41ECFFCAE0094F030 /* YNExpandableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED86E31ECFFCAE0094F030 /* YNExpandableCells.swift */; };
 		FAED86E61ECFFCD10094F030 /* YNSliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAED86E51ECFFCD10094F030 /* YNSliderCell.xib */; };
 		FAED86E81ECFFCE70094F030 /* YNSegmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAED86E71ECFFCE70094F030 /* YNSegmentCell.xib */; };
+		FAED86EA1ECFFEEE0094F030 /* TanyaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED86E91ECFFEEE0094F030 /* TanyaController.swift */; };
+		FAED86EC1ED018480094F030 /* TentangController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED86EB1ED018480094F030 /* TentangController.swift */; };
+		FAFD1FC31EDCB07200E394A9 /* ChildBeverages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD1FC21EDCB07200E394A9 /* ChildBeverages.swift */; };
+		FAFD1FC51EDCB48A00E394A9 /* ChildSnack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD1FC41EDCB48A00E394A9 /* ChildSnack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5FFE6892A081112C8C283915 /* Pods-Bakso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bakso.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bakso/Pods-Bakso.release.xcconfig"; sourceTree = "<group>"; };
 		CB49726B99B36A89032C64E3 /* Pods-Bakso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bakso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bakso/Pods-Bakso.debug.xcconfig"; sourceTree = "<group>"; };
 		F82F063BB68F3730B6A408B7 /* Pods_Bakso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bakso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA13A2041ED349FF002D7F79 /* PemesananController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PemesananController.swift; path = Controller/PemesananController.swift; sourceTree = "<group>"; };
+		FA13A2061ED36138002D7F79 /* ChildNotif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildNotif.swift; path = Cild/ChildNotif.swift; sourceTree = "<group>"; };
+		FA6A9D7F1ED050FE00BB15D5 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileController.swift; path = Controller/ProfileController.swift; sourceTree = "<group>"; };
+		FA6A9D811ED2FABE00BB15D5 /* EditProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProfileController.swift; path = Controller/EditProfileController.swift; sourceTree = "<group>"; };
 		FA6EF5A71EC812810069D1F4 /* Bakso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bakso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6EF5AA1EC812810069D1F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6EF5AC1EC812810069D1F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,16 +118,24 @@
 		FA71E91A1ECA239B000F7FA4 /* VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VC.swift; path = Controller/VC.swift; sourceTree = "<group>"; };
 		FA71E91C1ECA2443000F7FA4 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		FA71E91E1ECA24B8000F7FA4 /* ButtonImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonImage.swift; sourceTree = "<group>"; };
+		FA7BD5E91ED5E299009E0917 /* PesanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PesanCell.swift; path = Cell/PesanCell.swift; sourceTree = "<group>"; };
+		FA7BD5EF1ED6082C009E0917 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Class/User.swift; sourceTree = "<group>"; };
+		FA7BD5F11ED60C49009E0917 /* ClassStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassStruct.swift; path = Class/ClassStruct.swift; sourceTree = "<group>"; };
+		FA7BD6081ED8817F009E0917 /* FaqController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaqController.swift; path = Controller/FaqController.swift; sourceTree = "<group>"; };
+		FA7BD60A1ED88640009E0917 /* CellInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellInfo.swift; path = "Models Expand/CellInfo.swift"; sourceTree = "<group>"; };
+		FA7BD60C1ED88656009E0917 /* SectionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectionInfo.swift; path = "Models Expand/SectionInfo.swift"; sourceTree = "<group>"; };
+		FA7BD60E1ED8868B009E0917 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = "Custom Views Expand/HeaderView.swift"; sourceTree = "<group>"; };
+		FA7BD6101ED886A6009E0917 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = "Custom Views Expand/HeaderView.xib"; sourceTree = "<group>"; };
+		FA7BD6121ED886B6009E0917 /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageCell.xib; path = "Custom Views Expand/ImageCell.xib"; sourceTree = "<group>"; };
+		FA7BD6141ED886CB009E0917 /* TextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextCell.xib; path = "Custom Views Expand/TextCell.xib"; sourceTree = "<group>"; };
+		FA7BD6161ED8BF31009E0917 /* MIBadgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MIBadgeButton.swift; path = Extension/MIBadgeButton.swift; sourceTree = "<group>"; };
 		FAA6BDEC1ECB9CE7006A1953 /* PembelianController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PembelianController.swift; path = Controller/PembelianController.swift; sourceTree = "<group>"; };
 		FAA6BDF11ECB9FF5006A1953 /* CustomCellProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellProfile.swift; sourceTree = "<group>"; };
 		FAA6BDF31ECBA800006A1953 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		FAA6BDF51ECBAA60006A1953 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controller/MainViewController.swift; sourceTree = "<group>"; };
-		FAA6BDF71ECBAAAD006A1953 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftViewController.swift; path = Controller/SwiftViewController.swift; sourceTree = "<group>"; };
-		FAA6BDF91ECBAAC7006A1953 /* JavaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JavaViewController.swift; path = Controller/JavaViewController.swift; sourceTree = "<group>"; };
 		FAA6BDFB1ECBAAE9006A1953 /* ExSlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExSlideMenuController.swift; path = Controller/ExSlideMenuController.swift; sourceTree = "<group>"; };
 		FAA6BDFD1ECBAB0B006A1953 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Controller/UIViewController.swift; sourceTree = "<group>"; };
 		FAA6BDFF1ECBAB24006A1953 /* SubContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubContentsViewController.swift; path = Controller/SubContentsViewController.swift; sourceTree = "<group>"; };
-		FAA6BE011ECBAB3B006A1953 /* GoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoViewController.swift; path = Controller/GoViewController.swift; sourceTree = "<group>"; };
 		FAA6BE031ECBAB57006A1953 /* NonMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NonMenuController.swift; path = Controller/NonMenuController.swift; sourceTree = "<group>"; };
 		FAA6BE051ECBAB70006A1953 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightViewController.swift; path = Controller/RightViewController.swift; sourceTree = "<group>"; };
 		FAA6BE071ECBAC24006A1953 /* RatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RatingViewController.xib; path = View/RatingViewController.xib; sourceTree = "<group>"; };
@@ -134,12 +159,9 @@
 		FAADF8A21EC8508900E74116 /* UIVerticalAlignLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVerticalAlignLabel.swift; sourceTree = "<group>"; };
 		FAADF8A41EC850C300E74116 /* SlideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideCell.swift; sourceTree = "<group>"; };
 		FAADF8A61EC86E6500E74116 /* GlobalVar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVar.swift; sourceTree = "<group>"; };
-		FAADF8CB1EC8850500E74116 /* ChildExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildExampleViewController.swift; path = Cild/ChildExampleViewController.swift; sourceTree = "<group>"; };
-		FAADF8CD1EC8855D00E74116 /* TableChildExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableChildExampleViewController.swift; path = Cild/TableChildExampleViewController.swift; sourceTree = "<group>"; };
 		FAADF8D21EC8861600E74116 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = "../../../../Downloads/XLPagerTabStrip-master 2/Example/Example/Helpers/DataProvider.swift"; sourceTree = "<group>"; };
 		FAADF8D31EC8861600E74116 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = "../../../../Downloads/XLPagerTabStrip-master 2/Example/Example/Helpers/PostCell.swift"; sourceTree = "<group>"; };
 		FAADF8D41EC8861600E74116 /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PostCell.xib; path = "../../../../Downloads/XLPagerTabStrip-master 2/Example/Example/Helpers/PostCell.xib"; sourceTree = "<group>"; };
-		FAADF8DA1EC886E800E74116 /* NavButtonBarExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavButtonBarExampleViewController.swift; path = Controller/NavButtonBarExampleViewController.swift; sourceTree = "<group>"; };
 		FAED86BC1ECC9DDA0094F030 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Extension/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		FAED86BE1ECCB3440094F030 /* PembayaranController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PembayaranController.swift; path = Controller/PembayaranController.swift; sourceTree = "<group>"; };
 		FAED86C01ECCB5690094F030 /* ItemBayarTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemBayarTableCell.swift; path = Cell/ItemBayarTableCell.swift; sourceTree = "<group>"; };
@@ -154,6 +176,10 @@
 		FAED86E31ECFFCAE0094F030 /* YNExpandableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNExpandableCells.swift; sourceTree = "<group>"; };
 		FAED86E51ECFFCD10094F030 /* YNSliderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YNSliderCell.xib; sourceTree = "<group>"; };
 		FAED86E71ECFFCE70094F030 /* YNSegmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YNSegmentCell.xib; sourceTree = "<group>"; };
+		FAED86E91ECFFEEE0094F030 /* TanyaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TanyaController.swift; path = Controller/TanyaController.swift; sourceTree = "<group>"; };
+		FAED86EB1ED018480094F030 /* TentangController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TentangController.swift; path = Controller/TentangController.swift; sourceTree = "<group>"; };
+		FAFD1FC21EDCB07200E394A9 /* ChildBeverages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildBeverages.swift; path = Cild/ChildBeverages.swift; sourceTree = "<group>"; };
+		FAFD1FC41EDCB48A00E394A9 /* ChildSnack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildSnack.swift; path = Cild/ChildSnack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,10 +232,9 @@
 		FA6EF5A91EC812810069D1F4 /* Bakso */ = {
 			isa = PBXGroup;
 			children = (
-				FAED86E11ECFFC960094F030 /* YNExpandableCellEx.xib */,
-				FAED86E31ECFFCAE0094F030 /* YNExpandableCells.swift */,
-				FAED86E51ECFFCD10094F030 /* YNSliderCell.xib */,
-				FAED86E71ECFFCE70094F030 /* YNSegmentCell.xib */,
+				FA7BD5FB1ED880A2009E0917 /* Models Expand */,
+				FA7BD5FA1ED88087009E0917 /* Custom Views Expand */,
+				FA7BD5EE1ED5F960009E0917 /* Expandable */,
 				FAED86C61ECDA7180094F030 /* KPDropMenu */,
 				FAADF8D11EC885C000E74116 /* Helper */,
 				FAADF8CA1EC884DD00E74116 /* ChildControllers */,
@@ -237,15 +262,11 @@
 				FAA6BDFB1ECBAAE9006A1953 /* ExSlideMenuController.swift */,
 				FAA6BDFD1ECBAB0B006A1953 /* UIViewController.swift */,
 				FAA6BDFF1ECBAB24006A1953 /* SubContentsViewController.swift */,
-				FAA6BE011ECBAB3B006A1953 /* GoViewController.swift */,
 				FAA6BE031ECBAB57006A1953 /* NonMenuController.swift */,
-				FAA6BDF91ECBAAC7006A1953 /* JavaViewController.swift */,
-				FAA6BDF71ECBAAAD006A1953 /* SwiftViewController.swift */,
 				FAA6BDF51ECBAA60006A1953 /* MainViewController.swift */,
 				FAA6BDF31ECBA800006A1953 /* LeftViewController.swift */,
 				FAA6BE051ECBAB70006A1953 /* RightViewController.swift */,
 				FAADF89C1EC82D1C00E74116 /* SplashVC.swift */,
-				FAADF8DA1EC886E800E74116 /* NavButtonBarExampleViewController.swift */,
 				FA71E9101EC9780D000F7FA4 /* LoginController.swift */,
 				FA71E9141EC98EED000F7FA4 /* RegisterController.swift */,
 				FA71E9161EC9EAC3000F7FA4 /* SyaratController.swift */,
@@ -254,8 +275,45 @@
 				FAED86BE1ECCB3440094F030 /* PembayaranController.swift */,
 				FAED86D31ECE34940094F030 /* NotifControllerViewController.swift */,
 				FAED86D71ECE59AB0094F030 /* KritikController.swift */,
+				FAED86E91ECFFEEE0094F030 /* TanyaController.swift */,
+				FAED86EB1ED018480094F030 /* TentangController.swift */,
+				FA6A9D7F1ED050FE00BB15D5 /* ProfileController.swift */,
+				FA6A9D811ED2FABE00BB15D5 /* EditProfileController.swift */,
+				FA13A2041ED349FF002D7F79 /* PemesananController.swift */,
+				FA7BD6081ED8817F009E0917 /* FaqController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		FA7BD5EE1ED5F960009E0917 /* Expandable */ = {
+			isa = PBXGroup;
+			children = (
+				FAED86E11ECFFC960094F030 /* YNExpandableCellEx.xib */,
+				FAED86E31ECFFCAE0094F030 /* YNExpandableCells.swift */,
+				FAED86E51ECFFCD10094F030 /* YNSliderCell.xib */,
+				FAED86E71ECFFCE70094F030 /* YNSegmentCell.xib */,
+			);
+			name = Expandable;
+			sourceTree = "<group>";
+		};
+		FA7BD5FA1ED88087009E0917 /* Custom Views Expand */ = {
+			isa = PBXGroup;
+			children = (
+				FA7BD60E1ED8868B009E0917 /* HeaderView.swift */,
+				FA7BD6101ED886A6009E0917 /* HeaderView.xib */,
+				FA7BD6121ED886B6009E0917 /* ImageCell.xib */,
+				FA7BD6141ED886CB009E0917 /* TextCell.xib */,
+			);
+			name = "Custom Views Expand";
+			sourceTree = "<group>";
+		};
+		FA7BD5FB1ED880A2009E0917 /* Models Expand */ = {
+			isa = PBXGroup;
+			children = (
+				FA7BD60A1ED88640009E0917 /* CellInfo.swift */,
+				FA7BD60C1ED88656009E0917 /* SectionInfo.swift */,
+			);
+			name = "Models Expand";
 			sourceTree = "<group>";
 		};
 		FAADF8991EC82A9500E74116 /* Extension */ = {
@@ -275,6 +333,7 @@
 				FAED86C41ECD93200094F030 /* DropMenuButton.swift */,
 				FAED86CC1ECDAABA0094F030 /* HADropDown.swift */,
 				FAED86D11ECE2BF30094F030 /* CustomButton2.swift */,
+				FA7BD6161ED8BF31009E0917 /* MIBadgeButton.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -310,6 +369,7 @@
 				FAA6BE211ECC72C6006A1953 /* ItemTableCell.swift */,
 				FAED86C01ECCB5690094F030 /* ItemBayarTableCell.swift */,
 				FAED86D51ECE51FC0094F030 /* ItemNotifTableCell.swift */,
+				FA7BD5E91ED5E299009E0917 /* PesanCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -319,6 +379,8 @@
 			children = (
 				FAADF8A61EC86E6500E74116 /* GlobalVar.swift */,
 				FA71E91C1ECA2443000F7FA4 /* Device.swift */,
+				FA7BD5EF1ED6082C009E0917 /* User.swift */,
+				FA7BD5F11ED60C49009E0917 /* ClassStruct.swift */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -326,11 +388,12 @@
 		FAADF8CA1EC884DD00E74116 /* ChildControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FAADF8CB1EC8850500E74116 /* ChildExampleViewController.swift */,
-				FAADF8CD1EC8855D00E74116 /* TableChildExampleViewController.swift */,
 				FA71E90A1EC959CD000F7FA4 /* ChildMenuReguler.swift */,
 				FA71E90C1EC9663B000F7FA4 /* ChildMenuFrozen.swift */,
+				FAFD1FC21EDCB07200E394A9 /* ChildBeverages.swift */,
+				FAFD1FC41EDCB48A00E394A9 /* ChildSnack.swift */,
 				FA71E90E1EC96AA7000F7FA4 /* ChildMenuComing.swift */,
+				FA13A2061ED36138002D7F79 /* ChildNotif.swift */,
 			);
 			name = ChildControllers;
 			sourceTree = "<group>";
@@ -416,9 +479,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7BD6131ED886B6009E0917 /* ImageCell.xib in Resources */,
 				FA6EF5B51EC812810069D1F4 /* LaunchScreen.storyboard in Resources */,
 				FAA6BE121ECBACAF006A1953 /* DataTableViewCell.xib in Resources */,
+				FA7BD6111ED886A6009E0917 /* HeaderView.xib in Resources */,
 				FAA6BE0C1ECBAC4B006A1953 /* ImageHeaderView.xib in Resources */,
+				FA7BD6151ED886CB009E0917 /* TextCell.xib in Resources */,
 				FAED86C31ECD91CF0094F030 /* Empty.xib in Resources */,
 				FAED86E81ECFFCE70094F030 /* YNSegmentCell.xib in Resources */,
 				FAED86E61ECFFCD10094F030 /* YNSliderCell.xib in Resources */,
@@ -486,9 +552,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7BD6091ED8817F009E0917 /* FaqController.swift in Sources */,
 				FAA6BE141ECBAD1F006A1953 /* UIApplication.swift in Sources */,
 				FAADF8D51EC8861600E74116 /* DataProvider.swift in Sources */,
 				FAA6BDF41ECBA800006A1953 /* LeftViewController.swift in Sources */,
+				FAED86EA1ECFFEEE0094F030 /* TanyaController.swift in Sources */,
 				FAADF8A71EC86E6500E74116 /* GlobalVar.swift in Sources */,
 				FAA6BE1E1ECBAD81006A1953 /* UITableViewExtension.swift in Sources */,
 				FAA6BE1A1ECBAD5E006A1953 /* UIImage.swift in Sources */,
@@ -497,30 +565,35 @@
 				FAA6BE041ECBAB57006A1953 /* NonMenuController.swift in Sources */,
 				FAA6BDF61ECBAA60006A1953 /* MainViewController.swift in Sources */,
 				FAADF8A11EC8503D00E74116 /* MyCustomCell.swift in Sources */,
+				FA13A2051ED349FF002D7F79 /* PemesananController.swift in Sources */,
+				FA7BD5F01ED6082C009E0917 /* User.swift in Sources */,
 				FA71E90D1EC9663B000F7FA4 /* ChildMenuFrozen.swift in Sources */,
+				FAFD1FC51EDCB48A00E394A9 /* ChildSnack.swift in Sources */,
+				FAED86EC1ED018480094F030 /* TentangController.swift in Sources */,
 				FA71E9171EC9EAC3000F7FA4 /* SyaratController.swift in Sources */,
 				FAED86D41ECE34940094F030 /* NotifControllerViewController.swift in Sources */,
 				FAED86CD1ECDAABA0094F030 /* HADropDown.swift in Sources */,
-				FAA6BE021ECBAB3B006A1953 /* GoViewController.swift in Sources */,
 				FA6EF5AD1EC812810069D1F4 /* ViewController.swift in Sources */,
+				FA7BD6171ED8BF31009E0917 /* MIBadgeButton.swift in Sources */,
 				FAA6BE1C1ECBAD6D006A1953 /* UIImageView.swift in Sources */,
 				FAA6BE221ECC72C6006A1953 /* ItemTableCell.swift in Sources */,
 				FAED86D81ECE59AB0094F030 /* KritikController.swift in Sources */,
-				FAADF8CE1EC8855D00E74116 /* TableChildExampleViewController.swift in Sources */,
 				FAADF88F1EC826A400E74116 /* SlideMenuControllerSwift.xcdatamodeld in Sources */,
 				FAA6BE0E1ECBAC84006A1953 /* BaseTableViewCell.swift in Sources */,
 				FAA6BE161ECBAD34006A1953 /* String.swift in Sources */,
 				FAA6BE181ECBAD48006A1953 /* UIColor.swift in Sources */,
-				FAA6BDF81ECBAAAD006A1953 /* SwiftViewController.swift in Sources */,
-				FAADF8CC1EC8850500E74116 /* ChildExampleViewController.swift in Sources */,
+				FA7BD60D1ED88656009E0917 /* SectionInfo.swift in Sources */,
+				FA7BD60B1ED88640009E0917 /* CellInfo.swift in Sources */,
 				FAA6BDF21ECB9FF5006A1953 /* CustomCellProfile.swift in Sources */,
 				FAA6BE061ECBAB70006A1953 /* RightViewController.swift in Sources */,
-				FAADF8DB1EC886E800E74116 /* NavButtonBarExampleViewController.swift in Sources */,
+				FA7BD5EA1ED5E299009E0917 /* PesanCell.swift in Sources */,
 				FAADF8D61EC8861600E74116 /* PostCell.swift in Sources */,
 				FAED86D61ECE51FC0094F030 /* ItemNotifTableCell.swift in Sources */,
 				FAED86D21ECE2BF30094F030 /* CustomButton2.swift in Sources */,
+				FA6A9D801ED050FE00BB15D5 /* ProfileController.swift in Sources */,
 				FAA6BDED1ECB9CE7006A1953 /* PembelianController.swift in Sources */,
 				FAED86BD1ECC9DDA0094F030 /* KeyboardLayoutConstraint.swift in Sources */,
+				FA7BD60F1ED8868B009E0917 /* HeaderView.swift in Sources */,
 				FA71E91B1ECA239B000F7FA4 /* VC.swift in Sources */,
 				FA71E9111EC9780D000F7FA4 /* LoginController.swift in Sources */,
 				FAED86E41ECFFCAE0094F030 /* YNExpandableCells.swift in Sources */,
@@ -530,19 +603,22 @@
 				FA71E9151EC98EED000F7FA4 /* RegisterController.swift in Sources */,
 				FAED86C11ECCB5690094F030 /* ItemBayarTableCell.swift in Sources */,
 				FA71E90F1EC96AA7000F7FA4 /* ChildMenuComing.swift in Sources */,
+				FA6A9D821ED2FABE00BB15D5 /* EditProfileController.swift in Sources */,
 				FAA6BDFC1ECBAAE9006A1953 /* ExSlideMenuController.swift in Sources */,
 				FAA6BDFE1ECBAB0B006A1953 /* UIViewController.swift in Sources */,
 				FA71E9131EC98237000F7FA4 /* CustomButton.swift in Sources */,
 				FAED86BF1ECCB3440094F030 /* PembayaranController.swift in Sources */,
 				FAA6BE001ECBAB24006A1953 /* SubContentsViewController.swift in Sources */,
-				FAA6BDFA1ECBAAC7006A1953 /* JavaViewController.swift in Sources */,
 				FAA6BE0A1ECBAC34006A1953 /* ImageHeaderView.swift in Sources */,
 				FA71E90B1EC959CD000F7FA4 /* ChildMenuReguler.swift in Sources */,
+				FA7BD5F21ED60C49009E0917 /* ClassStruct.swift in Sources */,
 				FAADF8A51EC850C300E74116 /* SlideCell.swift in Sources */,
 				FA6EF5AB1EC812810069D1F4 /* AppDelegate.swift in Sources */,
+				FAFD1FC31EDCB07200E394A9 /* ChildBeverages.swift in Sources */,
 				FAADF8A31EC8508900E74116 /* UIVerticalAlignLabel.swift in Sources */,
 				FA71E9091EC956B3000F7FA4 /* MenuCell.swift in Sources */,
 				FAA6BE101ECBAC99006A1953 /* DataTableViewCell.swift in Sources */,
+				FA13A2071ED36138002D7F79 /* ChildNotif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

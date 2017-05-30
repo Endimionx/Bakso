@@ -169,7 +169,7 @@ class HADropDown: UIView {
         
         label.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         self.addSubview(label)
-        textAllignment = .center
+        textAllignment = .left
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTap(gesture:)))
         self.addGestureRecognizer(tapGesture)

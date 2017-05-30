@@ -18,8 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customize Segment Control" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7Q-LX-wum">
-                        <rect key="frame" x="20" y="8" width="181.5" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7Q-LX-wum">
+                        <rect key="frame" x="20" y="8" width="347" height="144"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="181.5" id="Lf4-qf-G3H"/>
                             <constraint firstAttribute="height" constant="21" id="PTC-hs-e8y"/>
@@ -28,39 +28,15 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NSW-7r-7Kv">
-                        <rect key="frame" x="20" y="43" width="335" height="29"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="28" id="2Rk-Uo-I5v"/>
-                        </constraints>
-                        <segments>
-                            <segment title="First"/>
-                            <segment title="Second"/>
-                        </segments>
-                    </segmentedControl>
-                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hOl-sY-j8j">
-                        <rect key="frame" x="20" y="97" width="335" height="29"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="28" id="Xoo-X5-HMT"/>
-                        </constraints>
-                        <segments>
-                            <segment title="First"/>
-                            <segment title="Second"/>
-                            <segment title="Third"/>
-                        </segments>
-                    </segmentedControl>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="NSW-7r-7Kv" firstAttribute="leading" secondItem="PTx-s7-jAs" secondAttribute="leading" constant="20" id="N5P-gd-Xol"/>
-                    <constraint firstAttribute="trailing" secondItem="hOl-sY-j8j" secondAttribute="trailing" constant="20" id="RFd-Jh-sFZ"/>
-                    <constraint firstItem="NSW-7r-7Kv" firstAttribute="top" secondItem="T7Q-LX-wum" secondAttribute="bottom" constant="14" id="SIz-pM-Fi9"/>
-                    <constraint firstItem="hOl-sY-j8j" firstAttribute="top" secondItem="NSW-7r-7Kv" secondAttribute="bottom" constant="26" id="Ywd-uO-haL"/>
                     <constraint firstItem="T7Q-LX-wum" firstAttribute="top" secondItem="PTx-s7-jAs" secondAttribute="top" constant="8" id="fjP-Fe-Gz8"/>
                     <constraint firstItem="T7Q-LX-wum" firstAttribute="leading" secondItem="PTx-s7-jAs" secondAttribute="leading" constant="20" id="jPX-gr-X4o"/>
-                    <constraint firstItem="hOl-sY-j8j" firstAttribute="leading" secondItem="PTx-s7-jAs" secondAttribute="leading" constant="20" id="vTh-2p-7OJ"/>
-                    <constraint firstAttribute="trailing" secondItem="NSW-7r-7Kv" secondAttribute="trailing" constant="20" id="wWe-EZ-SPB"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="lblInfo" destination="T7Q-LX-wum" id="R6D-zq-WiO"/>
+            </connections>
             <point key="canvasLocation" x="-219.5" y="-111"/>
         </tableViewCell>
     </objects>

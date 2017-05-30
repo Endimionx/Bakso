@@ -32,6 +32,9 @@ class ImageHeaderView : UIView {
         
         //drawLineFromPoint(start: start, toPoint: end, ofColor: UIColor.white, inView: self)
         
+      
+        
     }
+    
     
 }

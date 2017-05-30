@@ -20,7 +20,7 @@ protocol LeftMenuProtocol : class {
     func changeViewController(_ menu: LeftMenu)
 }
 
-class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSource, UITableViewDelegate {
+class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSource, UITableViewDelegate, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
@@ -37,6 +37,11 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
     var pembelianController: UIViewController!
     var notifController: UIViewController!
     var kritikController: UIViewController!
+    var tanyaController: UIViewController!
+    var tentangController: UIViewController!
+    var profileController: UIViewController!
+    var faqController: UIViewController!
+    
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -45,14 +50,18 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        var loader: UIActivityIndicatorView!
+        var viewLoading:UIView!
+        var syncLogo: UIImageView!
+        var syncImage: UIImageView!
+        
+        
         self.tableView.separatorColor = UIColor(red: 224/255, green: 224/255, blue: 224/255, alpha: 1.0)
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        
-        let swiftViewController = storyboard.instantiateViewController(withIdentifier: "SwiftViewController") as! SwiftViewController
-        self.swiftViewController = UINavigationController(rootViewController: swiftViewController)
-        
+         
         let pembelianController = storyboard.instantiateViewController(withIdentifier: "PembelianController") as! PembelianController
         self.pembelianController = UINavigationController(rootViewController: pembelianController)
         
@@ -62,22 +71,25 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
         let kritikController = storyboard.instantiateViewController(withIdentifier: "KritikController") as! KritikController
         self.kritikController = UINavigationController(rootViewController: kritikController)
         
+        let tanyaController = storyboard.instantiateViewController(withIdentifier: "TanyaController") as! TanyaController
+        self.tanyaController = UINavigationController(rootViewController: tanyaController)
+        
+        let tentangController = storyboard.instantiateViewController(withIdentifier: "TentangController") as! TentangController
+        self.tentangController = UINavigationController(rootViewController: tentangController)
+        
+        let profileController = storyboard.instantiateViewController(withIdentifier: "ProfileController") as! ProfileController
+        self.profileController = UINavigationController(rootViewController: profileController)
+        
+        let faqController = storyboard.instantiateViewController(withIdentifier: "FaqController") as! FaqController
+        self.faqController = UINavigationController(rootViewController: faqController)
         
         
-        let javaViewController = storyboard.instantiateViewController(withIdentifier: "JavaViewController") as! JavaViewController
-        self.javaViewController = UINavigationController(rootViewController: javaViewController)
         
-        let goViewController = storyboard.instantiateViewController(withIdentifier: "GoViewController") as! GoViewController
-        self.goViewController = UINavigationController(rootViewController: goViewController)
-        
-        let nonMenuController = storyboard.instantiateViewController(withIdentifier: "NonMenuController") as! NonMenuController
-        nonMenuController.delegate = self
-        self.nonMenuViewController = UINavigationController(rootViewController: nonMenuController)
- 
         tableView.rowHeight     = 40
         tableView.delegate      = self
         tableView.dataSource    = self
         tableView.separatorStyle = .none
+      
         self.tableView.register(SlideCell.self, forCellReuseIdentifier: "Cells")
         
         self.imageHeaderView = ImageHeaderView.loadNib()
@@ -95,6 +107,11 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
         super.viewDidLayoutSubviews()
         self.imageHeaderView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 200)
         
+        let tap__:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(lihatProfile))
+        tap__.delegate = self
+        self.imageHeaderView.profileImage.isUserInteractionEnabled = true
+        self.imageHeaderView.profileImage.addGestureRecognizer(tap__)
+        
         let start = CGPoint(x: 20, y: self.imageHeaderView.frame.height - 15)
         let end = CGPoint(x: self.imageHeaderView.frame.width - 30, y: self.imageHeaderView.frame.height - 15)
         
@@ -103,6 +120,13 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
         self.view.layoutIfNeeded()
     }
     
+    func lihatProfile(){
+        
+        self.present(profileController, animated:true, completion: nil)
+        self.closeLeft()
+        self.closeRight()
+        
+    }
     func changeViewController(_ menu: LeftMenu) {
         switch menu {
             case .pembelian:
@@ -112,15 +136,16 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
             case .kritik:
                 self.present(kritikController, animated:true, completion: nil)
             case .tanya:
-                self.slideMenuController()?.changeMainViewController(self.goViewController, close: true)
+                self.present(faqController, animated:true, completion: nil)
             case .tentang:
-                self.slideMenuController()?.changeMainViewController(self.nonMenuViewController, close: true)
+                self.present(tentangController, animated:true, completion: nil)
             case .keluar:
                 self.slideMenuController()?.changeMainViewController(self.nonMenuViewController, close: true)
         }
         
         self.closeLeft()
         self.closeRight()
+        
         
     }
     
@@ -138,12 +163,27 @@ class LeftViewController : UIViewController, LeftMenuProtocol, UITableViewDataSo
       
         cell.lblTitle.text = menus[indexPath.row]
         cell.imgTitle.image = UIImage(named : menusImg[indexPath.row])
+        cell.selectionStyle = .none
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        let cell  = tableView.cellForRow(at: indexPath as IndexPath)
+        cell!.contentView.backgroundColor = UIColor.blue.withAlphaComponent(0.2)
+    }
+    
+    func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+        let cell  = tableView.cellForRow(at: indexPath as IndexPath)
+        cell!.contentView.backgroundColor = mainColor
+    }
+    
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let menu = LeftMenu(rawValue: indexPath.row) {
+            var selectedCell:UITableViewCell = tableView.cellForRow(at: indexPath)!
+            //selectedCell.selectionStyle = .none
+            //selectedCell.contentView.backgroundColor = mainColor // UIColor.blue.withAlphaComponent(0.2)
             self.changeViewController(menu)
         }
     }

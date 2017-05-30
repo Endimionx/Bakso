@@ -25,15 +25,24 @@ class ChildMenuComing: UIViewController, IndicatorInfoProvider {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Coming Soon"
+        let img = UIImage(named: "comingsoon")
         
-        view.addSubview(label)
+        let w = view.frame.width * 0.8
+        let w1 = img?.size.width
+        let h1 = img?.size.height
+        let h = (w / w1!) * h1!
+        
+        let imgView = UIImageView()
+        imgView.image = img
+        imgView.frame = CGRect(x: 0, y: (view.frame.height / 2) - (h / 2), width: w, height: h)
+        //imgView.center.y = view.center.y
+        imgView.center.x = view.center.x
+     
+        view.addSubview(imgView)
         view.backgroundColor = .white
         
-        view.addConstraint(NSLayoutConstraint(item: label, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0))
-        view.addConstraint(NSLayoutConstraint(item: label, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: -50))
+        //view.addConstraint(NSLayoutConstraint(item: imgView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0))
+        //view.addConstraint(NSLayoutConstraint(item: imgView, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: -50))
     }
     
     // MARK: - IndicatorInfoProvider
